@@ -1,0 +1,4 @@
+##Negating an Image
+im = Image.open("parrot.png")
+im_t = im.point(lambda x: 255 - x)
+im_t.show()

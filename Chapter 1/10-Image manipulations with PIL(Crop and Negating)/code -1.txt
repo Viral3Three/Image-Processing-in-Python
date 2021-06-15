@@ -1,0 +1,5 @@
+from PIL import Image
+im = Image.open("parrot.png") 
+# open the image, provide the correct path
+print(im.width, im.height, im.mode, im.format) 
+# print image size, mode and format
