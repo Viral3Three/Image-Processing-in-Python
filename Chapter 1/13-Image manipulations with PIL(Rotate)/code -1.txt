@@ -1,0 +1,18 @@
+from PIL import Image
+
+## Rotate an image
+im = Image.open("parrot.png")
+print(im.width, im.height)
+im.show()
+
+im_45 = im.rotate(45) # rotate the image by 45 degrees
+im_45.show() # show the rotated image
+
+im_90 = im.rotate(90) # rotate the image by 90 degrees
+im_90.show() # show the rotated image
+
+im_180 = im.rotate(180) # rotate the image by 180 degrees
+im_180.show() # show the rotated image
+
+im_240 = im.rotate(240) # rotate the image by 240 degrees
+im_240.show() # show the rotated image
