@@ -1,0 +1,17 @@
+from PIL import Image
+
+## Resize the image into large
+im = Image.open("clock.jpg")
+print(im.width, im.height)
+im.show()
+
+im_large = im.resize((im.width*5, im.height*5), Image.BILINEAR) # bi-linear interpolation
+im_large.show()
+
+## Resize the image into small
+im = Image.open("victoria_memorial.png")
+print(im.width, im.height)
+im.show()
+
+im_small = im.resize((im.width//5, im.height//5), Image.ANTIALIAS)
+im_small.show()
