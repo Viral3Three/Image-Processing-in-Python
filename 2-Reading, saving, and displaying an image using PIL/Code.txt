@@ -1,0 +1,11 @@
+import numpy as np
+from PIL import Image
+
+im = Image.open("images/parrot.png")
+print(im.width, im.height, im.mode, im.format, type(im))
+
+im.show()
+
+im_g = im.convert('L') 
+im_g.save('images/kparrot_gray.png') 
+Image.open("images/kparrot_gray.png").show()

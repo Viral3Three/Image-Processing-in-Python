@@ -1,0 +1,30 @@
+Hi all
+
+In this Video I am going to show you
+
+Reading,Saving and Displaying an Image using PIL
+
+Follow the steps
+
+Open Python(Jypyter Notebook)
+
+Now its opened....
+
+Go to File Explorer and find *User*
+
+Create a folder in this place
+
+A Notebook is created Now copy the created notebook and place in that Folder
+
+Now Create a folder for Images
+
+In this we are going to use an Parrot image or You can use any Image
+
+Now type the following code.....
+
+
+See we opened an image using python
+
+Only original image is available in the folder
+
+Now see that folder...
