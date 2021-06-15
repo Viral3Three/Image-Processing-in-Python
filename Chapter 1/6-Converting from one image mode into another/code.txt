@@ -1,0 +1,12 @@
+from skimage.io import imread
+import matplotlib.pylab as plt
+from skimage import color
+
+
+im = imread("parrot.png", as_gray=True)
+print(im.shape)
+im = imread("parrot.png")
+im_g = color.rgb2gray(im)
+plt.subplot(121), plt.imshow(im, cmap='gray'), plt.axis('off')
+plt.subplot(122), plt.imshow(im_g, cmap='gray'), plt.axis('off')
+plt.show()
