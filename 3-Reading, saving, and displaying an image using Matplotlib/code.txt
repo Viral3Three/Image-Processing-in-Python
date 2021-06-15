@@ -1,0 +1,11 @@
+import matplotlib.image as mpimg
+import matplotlib.pylab as plt
+
+im = mpimg.imread("images/parrot.png")
+# read the image from disk as a numpy ndarray
+print(im.shape, im.dtype, type(im)) # this image contains an α channel, hence num_channels= 4
+# (960, 1280, 4) float32 <class 'numpy.ndarray'>
+plt.figure(figsize=(10,10))
+plt.imshow(im) # display the image
+#plt.axis('off')
+plt.show()
