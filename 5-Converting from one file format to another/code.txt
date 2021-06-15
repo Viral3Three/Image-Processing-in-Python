@@ -1,0 +1,11 @@
+from PIL import Image
+from skimage import *
+from skimage.io import *
+im = Image.open("hillpng.png")
+print(im.mode)
+
+# FROM RGB TO RGBA
+im.convert('RGB').save("hilljpg.jpg")
+# first convert to RGB mode 
+# FROM PNG INTO JPG
+im.show()
