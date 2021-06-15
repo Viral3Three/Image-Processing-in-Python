@@ -1,0 +1,16 @@
+from PIL import Image
+
+#Original image
+im = Image.open("parrot.png")
+im.show()
+
+#Applying an Affine transformation on an image
+im = Image.open("parrot.png")
+im.transform((int(1.4*im.width), im.height), Image.AFFINE,
+data=(1,-0.5,0,0,1,0)).show() # shear
+
+#Perspective transformation
+params = [1, 0.1, 0, -0.1, 0.5, 0, -0.005, -0.001]
+im1 = im.transform((im.width//3, im.height), Image.PERSPECTIVE, params,
+Image.BICUBIC)
+im1.show()
