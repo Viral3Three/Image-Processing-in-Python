@@ -1,0 +1,16 @@
+from PIL import Image
+
+## geometric transformations
+im = Image.open("parrot.png")
+print(im.width, im.height)
+im.show()
+
+im.transpose(Image.ROTATE_90).show() 
+
+im.transpose(Image.ROTATE_180).show() 
+
+im.transpose(Image.ROTATE_270).show() 
+
+im.transpose(Image.FLIP_LEFT_RIGHT).show() 
+
+im.transpose(Image.FLIP_TOP_BOTTOM).show() 
