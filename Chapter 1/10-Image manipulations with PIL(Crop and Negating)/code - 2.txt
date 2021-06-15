@@ -1,0 +1,4 @@
+##Crop an Image
+im_c = im.crop((175,75,320,200)) 
+# crop the rectangle given by (left, top, right, bottom) from the image
+im_c.show()
