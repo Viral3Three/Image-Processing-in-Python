@@ -1,0 +1,2 @@
+im = data.astronaut()
+imshow(im), show()

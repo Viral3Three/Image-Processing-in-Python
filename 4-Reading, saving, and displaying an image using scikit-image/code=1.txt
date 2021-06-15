@@ -1,0 +1,15 @@
+from skimage import *
+from skimage.io import *
+import matplotlib.pylab as plt
+im = imread("parrot.png") 
+# read image from disk, provide the correct path
+print(im.shape, im.dtype, type(im))
+hsv = color.rgb2hsv(im) 
+# from RGB to HSV color space
+hsv[:, :, 1] = 0.5 # change the saturation
+im1 = color.hsv2rgb(hsv) 
+# from HSV back to RGB
+imsave('parrot_hsv.png', im1) 
+# save image to disk
+im = imread("parrot_hsv.png")
+plt.axis('off'), imshow(im), show()
